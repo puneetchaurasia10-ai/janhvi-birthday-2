@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Happy Birthday Janhvi ❤️</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="login" class="center">
+  <div class="card">
+    <h1>🎂 Happy Birthday Janhvi ❤️</h1>
+    <p>Enter your special 6-digit password</p>
+    <input id="pwd" maxlength="6" placeholder="200704">
+    <button onclick="checkPwd()">Open Surprise 🔐</button>
+  </div>
+</div>
+
+<div id="home" style="display:none">
+  <h1>Happy Birthday Janhvi ❤️</h1>
+  <h2>My Beautiful Baacchhii 🌏</h2>
+  <button onclick="showGifts()">Click Here For Your Gift 🎁</button>
+
+  <div id="giftArea" style="display:none">
+    <div class="giftbox" onclick="openGift('g1')">🎁 Gift 1</div>
+    <div class="giftbox" onclick="openGift('g2')">🎁 Gift 2</div>
+    <div class="giftbox" onclick="openGift('g3')">🎁 Gift 3</div>
+
+    <div id="g1" class="giftcontent">
+      <h2>Happy Birthday My Love ❤️</h2>
+      <p>You are my happiness, my smile and my favorite person. 🎂❤️</p>
+    </div>
+
+    <div id="g2" class="giftcontent">
+      <h2>Photo Gallery 📸</h2>
+      <p>Put your 20 photos inside the images folder as 1.jpg to 20.jpg</p>
+      <div class="gallery">
+        <img src="images/1.jpg"><img src="images/2.jpg"><img src="images/3.jpg">
+        <img src="images/4.jpg"><img src="images/5.jpg"><img src="images/6.jpg">
+      </div>
+    </div>
+
+    <div id="g3" class="giftcontent">
+      <h2>Message 💌</h2>
+      <p>
+      Happyy Birthdayy My Love ❤️<br><br>
+      On this special day, it's not just an ordinary day but the day the most beautiful person entered this world and changed my life forever... 🥳<br><br>
+      You are the only reason behind my smiles and happiness ❤️🌏<br><br>
+      Once again Happy Birthday Baaccchhii ❤️<br><br>
+      Love You Forever ❤️ (143)
+      </p>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
