@@ -1,60 +1,171 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Happy Birthday Janhvi ❤️</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div id="login" class="center">
-  <div class="card">
-    <h1>🎂 Happy Birthday Janhvi ❤️</h1>
-    <p>Enter your special 6-digit password</p>
-    <input id="pwd" maxlength="6" placeholder="200704">
-    <button onclick="checkPwd()">Open Surprise 🔐</button>
-  </div>
+<!-- LOGIN PAGE -->
+
+<div id="loginPage" class="page active">
+
+<div class="login-card">
+
+<h1>🎂 Happy Birthday Janhvi ❤️</h1>
+
+<p>Enter your special 6-digit password</p>
+
+<input type="password" id="pwd" placeholder="200704">
+
+<button onclick="checkPwd()">Open Surprise 🎁</button>
+
 </div>
 
-<div id="home" style="display:none">
-  <h1>Happy Birthday Janhvi ❤️</h1>
-  <h2>My Beautiful Baacchhii 🌏</h2>
-  <img src="cover.jpg" style="width:300px;max-width:90%;border-radius:20px;">
-  <button onclick="showGifts()">Click Here For Your Gift 🎁</button>
+</div>
 
-  <div id="giftArea" style="display:none">
-    <div class="giftbox" onclick="openGift('g1')">🎁 Gift 1</div>
-    <div class="giftbox" onclick="openGift('g2')">🎁 Gift 2</div>
-    <div class="giftbox" onclick="openGift('g3')">🎁 Gift 3</div>
+<!-- HOME PAGE -->
 
-    <div id="g1" class="giftcontent">
-      <h2>Happy Birthday My Love ❤️</h2>
-      <p>You are my happiness, my smile and my favorite person. 🎂❤️</p>
-    </div>
+<div id="homePage" class="page">
 
-    <div id="g2" class="giftcontent">
-      <h2>Photo Gallery 📸</h2>
-      <p>Put your 20 photos inside the images folder as 1.jpg to 20.jpg</p>
-      <div class="gallery">
-        <img src="1.jpg"><img src="2.jpg"><img src="3.jpg">
-        <img src="4.jpg"><img src="5.jpg"><img src="6.jpg">
-      </div>
-    </div>
+<h1 class="main-title">My Beautiful Baacchhii 🌍</h1>
 
-    <div id="g3" class="giftcontent">
-      <h2>Message 💌</h2>
-      <p>
-      Happyy Birthdayy My Love ❤️<br><br>
-      On this special day, it's not just an ordinary day but the day the most beautiful person entered this world and changed my life forever... 🥳<br><br>
-      You are the only reason behind my smiles and happiness ❤️🌏<br><br>
-      Once again Happy Birthday Baaccchhii ❤️<br><br>
-      Love You Forever ❤️ (143)
-      </p>
-    </div>
-  </div>
+<img src="cover.jpg" class="cover-photo">
+
+<button class="main-btn" onclick="showGiftPage()">
+Click Here For Your Gift 🎁
+</button>
+
+</div>
+
+<!-- GIFT PAGE -->
+
+<div id="giftPage" class="page">
+
+<h1>Choose Your Gift 🎁</h1>
+
+<div class="gift-container">
+
+<div class="gift-card" onclick="openGift1()">
+🎁 Gift 1
+</div>
+
+<div class="gift-card" onclick="openGift2()">
+📸 Gift 2
+</div>
+
+<div class="gift-card" onclick="openGift3()">
+💌 Gift 3
+</div>
+
+</div>
+
+<button class="back-btn" onclick="backHome()">⬅ Back</button>
+
+</div>
+
+<!-- GIFT 1 -->
+
+<div id="gift1Page" class="page">
+
+<div class="gift-box">
+
+<div class="cake">🎂</div>
+
+<h1>Happy Birthday My Love ❤️</h1>
+
+<p>
+You are my happiness, my smile and my favorite person ❤️
+</p>
+
+</div>
+
+<button class="back-btn" onclick="backGift()">⬅ Back</button>
+
+</div>
+
+<!-- GIFT 2 -->
+
+<div id="gift2Page" class="page">
+
+<h1>Our Beautiful Memories 📸</h1>
+
+<div class="gallery">
+
+<img src="1.jpg">
+<img src="2.jpg">
+<img src="3.jpg">
+<img src="4.jpg">
+<img src="5.jpg">
+
+<img src="6.jpg">
+<img src="7.jpg">
+<img src="8.jpg">
+<img src="9.jpg">
+<img src="10.jpg">
+
+<img src="11.jpg">
+<img src="12.jpg">
+<img src="13.jpg">
+<img src="14.jpg">
+<img src="15.jpg">
+
+<img src="16.jpg">
+<img src="17.jpg">
+<img src="18.jpg">
+<img src="19.jpg">
+<img src="20.jpg">
+
+</div>
+
+<button class="back-btn" onclick="backGift()">⬅ Back</button>
+
+</div>
+
+<!-- GIFT 3 -->
+
+<div id="gift3Page" class="page">
+
+<div class="letter">
+
+<h1>💌 A Letter From My Heart</h1>
+
+<p>
+
+My Dearest Janhvi ❤️
+
+<br><br>
+
+On your special day, I just want to remind you how truly amazing you are.
+
+<br><br>
+
+You make my world brighter just by being in it.
+
+<br><br>
+
+Thank you for your love, your care and for being the most beautiful part of my life.
+
+<br><br>
+
+I wish you all the happiness, success and love that you deserve.
+
+<br><br>
+
+Forever Yours ❤️
+
+</p>
+
+</div>
+
+<button class="back-btn" onclick="backGift()">⬅ Back</button>
+
 </div>
 
 <script src="script.js"></script>
+
 </body>
 </html>
