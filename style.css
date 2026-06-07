@@ -7,7 +7,12 @@
 
 body{
   font-family:Arial,sans-serif;
-  background:linear-gradient(135deg,#ff9a9e,#fecfef,#fad0c4);
+  background:linear-gradient(
+  135deg,
+  #ff9a9e 0%,
+  #fbc2eb 35%,
+  #fecfef 70%,
+  #fad0c4 100%);
   min-height:100vh;
   text-align:center;
   color:white;
@@ -38,9 +43,11 @@ body{
 }
 
 .login-card h1{
-  white-space:nowrap;
-  font-size:28px;
+  font-size:32px;
   margin-bottom:15px;
+  line-height:1.3;
+  text-align:center;
+  white-space:normal;
 }
 
 .login-card p{
@@ -148,13 +155,26 @@ button{
 }
 
 .letter{
-  background:rgba(255,255,255,.18);
-  backdrop-filter:blur(10px);
-  padding:30px;
-  border-radius:25px;
-  max-width:750px;
-  line-height:1.8;
-  font-size:18px;
+  background:rgba(255,255,255,0.25);
+  backdrop-filter:blur(15px);
+  padding:40px 25px;
+  border-radius:30px;
+  max-width:850px;
+  margin:auto;
+  box-shadow:0 15px 40px rgba(255,105,180,0.25);
+  border:2px solid rgba(255,255,255,0.4);
+}
+
+.letter h1{
+  font-size:42px;
+  margin-bottom:25px;
+  color:#ff4d88;
+}
+
+.letter p{
+  font-size:22px;
+  line-height:2;
+  color:white;
 }
 
 .back-btn{
@@ -170,3 +190,17 @@ body::before{
   opacity:.25;
   pointer-events:none;
   }
+.heart-banner{
+  font-size:30px;
+  margin-bottom:20px;
+  animation: glow 2s infinite alternate;
+}
+
+@keyframes glow{
+  from{
+    opacity:.6;
+  }
+  to{
+    opacity:1;
+  }
+  
