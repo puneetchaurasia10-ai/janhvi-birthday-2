@@ -1,188 +1,172 @@
 
-body{
+*{
   margin:0;
   padding:0;
+  box-sizing:border-box;
+}
+
+body{
   font-family:Arial,sans-serif;
-  text-align:center;
-  background:linear-gradient(135deg,#ffb6c1,#ffd6e8,#ffe4f2);
+  background:linear-gradient(135deg,#ff9a9e,#fecfef,#fad0c4);
   min-height:100vh;
+  text-align:center;
   color:white;
+  overflow-x:hidden;
 }
 
-.card,
-.giftcontent{
-  background:rgba(255,255,255,0.18);
-  backdrop-filter:blur(15px);
-  border-radius:30px;
-  padding:30px;
-  margin:25px auto;
-  width:90%;
-  max-width:800px;
-  box-shadow:0 10px 30px rgba(255,105,180,.25);
-}
-
-.center{
-  display:flex;
+.page{
+  display:none;
+  padding:25px;
+  min-height:100vh;
   justify-content:center;
   align-items:center;
-  min-height:100vh;
+  flex-direction:column;
 }
 
-#login h1{
-  font-size:48px;
+.page.active{
+  display:flex;
+}
+
+.login-card{
+  background:rgba(255,255,255,0.18);
+  backdrop-filter:blur(12px);
+  padding:30px;
+  border-radius:25px;
+  width:90%;
+  max-width:420px;
+  box-shadow:0 8px 25px rgba(0,0,0,.2);
+}
+
+.login-card h1{
+  white-space:nowrap;
+  font-size:28px;
   margin-bottom:15px;
 }
 
-#login p{
-  font-size:22px;
+.login-card p{
+  margin-bottom:15px;
 }
 
 input{
-  width:80%;
-  padding:15px;
+  width:100%;
+  padding:12px;
   border:none;
-  border-radius:15px;
-  font-size:22px;
+  border-radius:12px;
+  margin-bottom:15px;
+  font-size:16px;
+  outline:none;
   text-align:center;
-  margin:15px 0;
 }
 
 button{
-  background:linear-gradient(135deg,#ff4f8b,#ff77a9);
-  color:white;
+  padding:12px 25px;
   border:none;
-  padding:18px 35px;
-  border-radius:18px;
-  font-size:22px;
-  font-weight:bold;
+  border-radius:15px;
+  font-size:16px;
   cursor:pointer;
-  box-shadow:0 8px 20px rgba(255,105,180,.4);
+  background:white;
+  color:#ff4d88;
+  font-weight:bold;
 }
 
-#home h1{
-  font-size:55px;
-  margin-top:20px;
+.main-title{
+  font-size:42px;
+  margin-bottom:15px;
 }
 
-#home h2{
-  font-size:40px;
-  color:#ff4f8b;
+.sub-title{
+  font-size:30px;
+  color:#ff4d88;
+  margin-top:15px;
+  margin-bottom:20px;
 }
 
 .cover-photo{
-  width:85%;
-  max-width:650px;
-  border-radius:30px;
-  border:8px solid white;
-  box-shadow:0 10px 30px rgba(255,105,180,.4);
-  margin:20px 0;
+  width:320px;
+  height:320px;
+  object-fit:cover;
+  border-radius:25px;
+  border:5px solid white;
+  box-shadow:0 8px 25px rgba(0,0,0,.25);
+  margin-bottom:20px;
 }
 
-.giftbox{
-  display:inline-block;
-  background:white;
-  color:#ff4f8b;
+.gift-container{
+  display:flex;
+  gap:20px;
+  flex-wrap:wrap;
+  justify-content:center;
+  margin-top:30px;
+}
+
+.gift-card{
+  width:180px;
+  height:180px;
+  background:rgba(255,255,255,.18);
+  backdrop-filter:blur(10px);
+  border-radius:25px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
   font-size:24px;
   font-weight:bold;
-  padding:18px 30px;
-  margin:10px;
-  border-radius:20px;
   cursor:pointer;
-  box-shadow:0 8px 20px rgba(255,105,180,.3);
+  box-shadow:0 6px 18px rgba(0,0,0,.2);
 }
 
-.giftcontent{
-  display:none;
+.gift-card:hover{
+  transform:scale(1.05);
 }
 
-/* Gift 1 */
-#g1{
-  background:linear-gradient(135deg,#ff9a9e,#fecfef);
-  color:white;
+.gift-box{
+  background:rgba(255,255,255,.18);
+  backdrop-filter:blur(10px);
+  padding:30px;
+  border-radius:25px;
+  max-width:700px;
+  box-shadow:0 8px 20px rgba(0,0,0,.2);
 }
 
-#g1::before{
-  content:"🎂";
-  display:block;
-  font-size:90px;
-  margin-bottom:10px;
+.cake{
+  font-size:120px;
+  margin-bottom:20px;
 }
 
-#g1 h2{
-  font-size:45px;
-}
-
-#g1 p{
-  font-size:24px;
-  line-height:1.8;
-}
-
-/* Gallery */
 .gallery{
   display:grid;
   grid-template-columns:repeat(2,1fr);
-  gap:15px;
+  gap:10px;
+  margin-top:20px;
 }
 
 .gallery img{
   width:100%;
-  height:260px;
+  height:180px;
   object-fit:cover;
-  border-radius:20px;
-  border:4px solid white;
-}
-
-/* Gift 3 */
-#g3{
-  background:#fff8dc;
-  color:#444;
-}
-
-#g3::before{
-  content:"💌❤️";
-  display:block;
-  font-size:80px;
-  margin-bottom:15px;
-}
-
-#g3 h2{
-  color:#ff4f8b;
-  font-size:40px;
-}
-
-#g3 p{
-  background:white;
-  padding:25px;
   border-radius:15px;
-  font-size:20px;
+  border:3px solid white;
+}
+
+.letter{
+  background:rgba(255,255,255,.18);
+  backdrop-filter:blur(10px);
+  padding:30px;
+  border-radius:25px;
+  max-width:750px;
   line-height:1.8;
+  font-size:18px;
+}
+
+.back-btn{
+  margin-top:25px;
 }
 
 body::before{
   content:"💕 💖 💗 💞 💕";
   position:fixed;
-  top:15px;
+  top:10px;
   width:100%;
-  font-size:30px;
+  font-size:28px;
   opacity:.25;
   pointer-events:none;
-}
-
-@media(max-width:600px){
-
-  #home h1{
-    font-size:38px;
-  }
-
-  #home h2{
-    font-size:28px;
-  }
-
-  .gallery{
-    grid-template-columns:repeat(2,1fr);
-  }
-
-  .gallery img{
-    height:180px;
-  }
   }
