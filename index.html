@@ -6,15 +6,17 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Happy Birthday Janhvi ❤️</title>
 <link rel="stylesheet" href="style.css">
+
 <style>
-  /* This CSS rule ensures the login title stays in a single line on all mobile screens */
-  .login-card h1 {
-    white-space: nowrap !important;
-    font-size: clamp(1.2rem, 5.5vw, 2.2rem) !important;
-    text-align: center;
-  }
+.login-card h1{
+    white-space:nowrap;
+    font-size:clamp(1.2rem,5.5vw,2.2rem);
+    text-align:center;
+}
 </style>
+
 </head>
+
 <body>
 
 <!-- LOGIN PAGE -->
@@ -27,9 +29,18 @@
 
 <p>Enter your special 6-digit password</p>
 
-<input type="password" id="pwd" placeholder="••••••">
+<input
+type="password"
+id="pwd"
+name="birthday_password"
+placeholder="Enter Password"
+autocomplete="new-password"
+autocorrect="off"
+autocapitalize="off"
+spellcheck="false"
+inputmode="numeric">
 
-<button onclick="checkPwd()">Open Surprise 🎁</button>
+<button type="button" onclick="checkPwd()">Open Surprise 🎁</button>
 
 </div>
 
