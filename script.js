@@ -63,3 +63,7 @@ function backGift(){
   document.getElementById('giftPage').classList.add('active');
 
 }
+
+window.onload = function () {
+  document.getElementById("pwd").value = "";
+};
