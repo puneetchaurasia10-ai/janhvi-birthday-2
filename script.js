@@ -9,7 +9,7 @@ function checkPwd(){
 
   const pwd=document.getElementById('pwd').value;
 
-  if(pwd==="200704"){
+  if(pwd==="143143"){
 
     hideAllPages();
     document.getElementById('homePage').classList.add('active');
